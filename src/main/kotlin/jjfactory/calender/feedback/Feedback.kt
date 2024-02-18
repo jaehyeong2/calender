@@ -1,6 +1,7 @@
 package jjfactory.calender.feedback
 
 import jakarta.persistence.*
+import jjfactory.calender.BaseEntity
 
 @Table(name = "feedback")
 @Entity
@@ -10,7 +11,6 @@ class Feedback(
 
     val sendUserId: Long,
     val receiveUserId: Long,
-
-) {
+): BaseEntity() {
 
 }

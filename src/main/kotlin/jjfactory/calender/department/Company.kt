@@ -5,6 +5,7 @@ import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
 import jakarta.persistence.Table
+import jjfactory.calender.BaseEntity
 
 @Table(name = "company")
 @Entity
@@ -15,6 +16,6 @@ class Company(
     val name: String,
     var businessNumber: String
 
-) {
+): BaseEntity() {
 
 }

@@ -1,6 +1,7 @@
 package jjfactory.calender.reveiw
 
 import jakarta.persistence.*
+import jjfactory.calender.BaseEntity
 
 @Table(name = "review")
 @Entity
@@ -10,7 +11,7 @@ class Review(
 
     @Enumerated(EnumType.STRING)
     val type: ReviewType
-) {
+): BaseEntity() {
 
 
 }

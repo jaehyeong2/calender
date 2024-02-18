@@ -1,6 +1,7 @@
 package jjfactory.calender.career
 
 import jakarta.persistence.*
+import jjfactory.calender.BaseEntity
 
 @Table(name = "career")
 @Entity
@@ -12,7 +13,6 @@ class Career(
 
     val companyName: String,
     val departmentName: String,
-) {
-
+): BaseEntity() {
 
 }
