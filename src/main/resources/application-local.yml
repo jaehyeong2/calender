@@ -1,0 +1,15 @@
+server:
+  port: 8086
+
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    url: jdbc:postgresql://localhost:5432/calender_local
+    username: calender_local
+    password: calender_local
+
+
+application:
+  Environment: local
